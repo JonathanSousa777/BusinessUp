@@ -1,3 +1,7 @@
+body {
+    font-size: 12px;
+}
+
 .logo {
     width: 240px;
     height: 41px;
@@ -21,4 +25,8 @@ footer #version{
     float: right;
     margin-right: 10px;
     font-weight: bold;
+}
+
+.label-jsf {
+    margin: 0px 10px 10px 0px;
 }

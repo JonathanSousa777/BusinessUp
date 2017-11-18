@@ -11,4 +11,8 @@ public enum TipoObjetivo implements Serializable {
     private TipoObjetivo(String descricao) {
         this.descricao = descricao;
     }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }

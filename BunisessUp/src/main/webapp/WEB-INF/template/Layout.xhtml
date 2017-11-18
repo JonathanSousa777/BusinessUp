@@ -48,21 +48,30 @@
                                 <span>MENU DE NAVEGAÇÃO</span>
                             </li>
                             <li class="icon">
-                                <a href="#" ><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                                <p:link><i class="fa fa-calculator" /> Calcular</p:link>
                             </li>
                             <li class="icon">
-                                <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                                <p:link><i class="fa fa-plus" /> Cadastros<span class="fa arrow"></span></p:link>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="#">Second Level Item</a>
+                                        <p:link outcome="/cadastros/CadastroProcesso"><i class="fa fa-file" /> Processo</p:link>
                                     </li>
                                     <li>
-                                        <a href="#">Third Level <span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                        </ul>
+                                        <p:link outcome="/cadastros/CadastroObjetivoTi"><i class="fa fa-bullseye" /> Objetivo de TI</p:link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="icon">
+                                <p:link ><i class="fa fa-search" /> Consultas<span class="fa arrow"></span></p:link>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <p:link ><i class="fa fa-list" /> Maturidade</p:link>
+                                    </li>
+                                    <li>
+                                        <p:link ><i class="fa fa-check" /> Monitorar e avaliar</p:link>
+                                    </li>
+                                    <li>
+                                        <p:link outcome="/consultas/PesquisaObjetivoTi"><i class="fa fa-bullseye"/> Objetivos de TI</p:link>
                                     </li>
                                 </ul>
                             </li>

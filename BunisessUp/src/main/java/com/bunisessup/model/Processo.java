@@ -22,7 +22,6 @@ public class Processo implements Serializable {
     private List<ObjetivoTi> objetivosTi;
     private RecursoTi recursoTi;
     private Maturidade maturidade;
-    private Dominio dominio;
 
     @Id
     @GeneratedValue
@@ -74,7 +73,7 @@ public class Processo implements Serializable {
     public void setMaturidade(Maturidade maturidade) {
         this.maturidade = maturidade;
     }
-
+    
     @Override
     public int hashCode() {
         int hash = 7;
