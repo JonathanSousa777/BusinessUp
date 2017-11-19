@@ -18,6 +18,10 @@ public class ObjetivosTi implements Serializable {
         return manager.createQuery("from ObjetivoTi").getResultList();
     }
 
+    public ObjetivoTi porId(long id) {
+        return manager.find(ObjetivoTi.class, id);
+    }
+
     public ObjetivoTi guardar(ObjetivoTi objetivoTi) {
         return manager.merge(objetivoTi);
     }

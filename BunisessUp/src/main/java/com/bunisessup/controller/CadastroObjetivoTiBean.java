@@ -19,7 +19,7 @@ public class CadastroObjetivoTiBean implements Serializable {
     @Inject
     private CadastroObjetivoTiService service;
 
-    public void inicializar() {
+    public CadastroObjetivoTiBean() {
         limpar();
     }
 
@@ -30,8 +30,12 @@ public class CadastroObjetivoTiBean implements Serializable {
     public void salvar() {
         this.service.salvar(this.objetivoTi);
         limpar();
-        
+
         FacesUtil.addMessage("Objetivo de Ti salvo com sucesso!");
+    }
+
+    public boolean isEditando() {
+        return objetivoTi.getId() != null;
     }
 
     public TipoObjetivo[] getTiposObjetivo() {
