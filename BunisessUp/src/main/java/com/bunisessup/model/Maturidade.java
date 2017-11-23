@@ -43,4 +43,16 @@ public enum Maturidade implements Serializable {
         this.descricao = descricao;
     }
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
 }
