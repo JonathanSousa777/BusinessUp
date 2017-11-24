@@ -1,6 +1,7 @@
 package com.bunisessup.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,19 +18,19 @@ import javax.persistence.Table;
 @Table(name = "tab_processo")
 public class Processo implements Serializable {
 
-    private long id;
+    private Long id;
     private String descricao;
-    private List<ObjetivoTi> objetivosTi;
+    private String sigla;
+    private List<ObjetivoTi> objetivosTi = new ArrayList<>();
     private RecursoTi recursoTi;
-    private Maturidade maturidade;
 
     @Id
     @GeneratedValue
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -43,9 +44,8 @@ public class Processo implements Serializable {
     }
 
     @ManyToMany
-    @JoinTable(name = "processos_objetivos",
-            joinColumns = @JoinColumn(name = "id_processo"),
-            inverseJoinColumns = @JoinColumn(name = "id_objetivo"))
+    @JoinTable(name = "processo_objetivoTi", joinColumns = @JoinColumn(name = "processo_id"),
+            inverseJoinColumns = @JoinColumn(name = "objetivoTi_id"))
     public List<ObjetivoTi> getObjetivosTi() {
         return objetivosTi;
     }
@@ -65,15 +65,14 @@ public class Processo implements Serializable {
     }
 
     @Column
-    @Enumerated(EnumType.STRING)
-    public Maturidade getMaturidade() {
-        return maturidade;
+    public String getSigla() {
+        return sigla;
     }
 
-    public void setMaturidade(Maturidade maturidade) {
-        this.maturidade = maturidade;
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
     }
-    
+
     @Override
     public int hashCode() {
         int hash = 7;

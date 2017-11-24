@@ -13,4 +13,8 @@ public enum RecursoTi implements Serializable {
     private RecursoTi(String descricao) {
         this.descricao = descricao;
     }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }

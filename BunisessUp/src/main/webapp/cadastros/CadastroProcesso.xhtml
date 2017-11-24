@@ -9,6 +9,10 @@
     <ui:define name="titulo">BunisessUp - #{cadastroProcesso.editando ? 'Edição de Processo' : 'Cadastro de Processo'}</ui:define>
     <ui:define name="nomePagina">#{cadastroProcessoBean.editando ? 'Edição de Processo' : 'Cadastro de Processo'}</ui:define>
 
+    <f:metadata>
+        <f:viewAction action="#{pesquisaObjetivoTiBean.inicializar()}" />
+    </f:metadata>
+
     <ui:define name="conteudo">
         <h:form id="form">
             <p:messages id="messages" />
@@ -20,20 +24,37 @@
                 <p:outputLabel value="Sigla" for="sigla" styleClass="label-jsf"/>
                 <h:inputText id="sigla" value="#{cadastroProcessoBean.processo.sigla}" style="width: 100%;" />
 
-                <p:outputLabel value="Objetivos de TI" for="objetivosTI" styleClass="label-jsf"/>
-                <p:selectManyMenu id="objetivosTI" value="#{cadastroProcessoBean.processo.objetivosTi}" style="width: 100%;" >
-                    <f:selectItem itemLabel="dslkjadlas" />
-                    <f:selectItem itemLabel="dslkjadlas" />
-                    <f:selectItem itemLabel="dslkjadlas" />
-                    <f:selectItem itemLabel="dslkjadlas" />
-                    <f:selectItem itemLabel="dslkjadlas" />
-                    <f:selectItem itemLabel="dslkjadlas" />
-                </p:selectManyMenu>
-                <br/>
-                <h:commandButton value="Cadastrar" action="#{cadastroObjetivoTiBean.salvar()}" class="btn btn-primary" >
-                    <f:ajax execute="form" render="form messages" />
+                <p:outputLabel value="Recurso de TI" for="recursoTi" styleClass="label-jsf"/>
+                <h:selectOneMenu id="recursoTi" value="#{cadastroProcessoBean.processo.recursoTi}" style="width: 100%;" >
+                    <f:selectItem itemLabel="Selecione..." noSelectionOption="true"/>
+                    <f:selectItems value="#{cadastroProcessoBean.recursosTi}" var="recursoTi" itemLabel="#{recursoTi.descricao}" itemValue="#{recursoTi}"/>
+                </h:selectOneMenu>
+            </h:panelGrid>
+
+            <p:spacer height="20" />
+
+            <h:panelGrid id="panel-objetivosTi">
+                <p:outputLabel value="Objetivos de Ti" for="objetivoTi" />
+                <h:selectOneMenu value="#{cadastroProcessoBean.objetivoTiSelecionado}" id="objetivoTi" >
+                    <f:selectItem itemLabel="Selecione..." noSelectionOption="true" />
+                    <f:selectItems value="#{pesquisaObjetivoTiBean.listObjetivosTi}" var="objetivoTi" itemLabel="#{objetivoTi.descricao}" itemValue="#{objetivoTi}" />
+                </h:selectOneMenu>
+                <h:commandButton value="Adicionar ObjetivoTi" styleClass="btn btn-warning" style="margin-top: 5px;" action="#{cadastroProcessoBean.adicionarObjetivoTi()}">
+                    <f:ajax execute="panel-objetivosTi @this" render="panel-objetivosTi table-objetivoTi" />
                 </h:commandButton>
             </h:panelGrid>
+
+            <p:spacer height="10" />
+
+            <p:dataTable id="table-objetivoTi" emptyMessage="Nenhum registro encontrado" value="#{cadastroProcessoBean.listObjetivoTi}" var="itemObjetivoTi">
+                <p:column headerText="Nome">
+                    <h:outputText value="#{itemObjetivoTi.descricao}" />
+                </p:column>
+            </p:dataTable>
+
+            <h:commandButton value="Cadastrar" action="#{cadastroProcessoBean.salvar()}" class="btn btn-primary" style="margin-top: 5px;" >
+                <f:ajax execute="form" render="form messages" />
+            </h:commandButton>
         </h:form>
     </ui:define>
 
