@@ -1,0 +1,45 @@
+<ui:composition template="/WEB-INF/template/Layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets" >
+
+    <ui:define name="titulo">BunisessUp - Consulta</ui:define>
+    <ui:define name="nomePagina">Processos relacionados a Monitorar e Avaliar</ui:define>
+
+    <f:metadata>
+        <f:viewAction action="#{pesquisaProcessoBean.inicializar()}" />
+    </f:metadata>
+
+    <ui:define name="conteudo">
+        <p:messages id="messages" />
+        <h:form id="form">
+            <p:dataTable id="tabelaProcesso" style="margin-top: 20px;" rows="10" paginator="true" paginatorPosition="bottom" var="processo"
+                         emptyMessage="Nenhum registro foi encontrado" paginatorAlwaysVisible="false" value="#{pesquisaProcessoBean.listProcessos}">
+
+                <p:column headerText="Descrição" >
+                    <h:outputText value="#{processo.sigla}" />
+                </p:column>
+
+                <p:column headerText="Descrição" >
+                    <h:outputText value="#{processo.descricao}" />
+                </p:column>
+
+                <p:column headerText="Descrição" >
+                    <h:outputText value="#{processo.recursoTi.descricao}" />
+                </p:column>
+
+                <p:column headerText="Ações" width="88">
+                    <p:button icon="fa fa-pencil" title="Editar" outcome="/cadastros/CadastroProcesso">
+                        <f:param name="processo" value="#{processo.id}" />
+                    </p:button>
+                    <p:commandButton icon="fa fa-trash" title="Excluir" action="#{pesquisaProcessoBean.excluir()}" process="@this tabelaProcesso" update="tabelaProcesso messages">
+                        <f:setPropertyActionListener value="#{processo}" target="#{pesquisaProcessoBean.processo}" />
+                    </p:commandButton>
+                </p:column>
+            </p:dataTable>
+        </h:form>
+    </ui:define>
+
+</ui:composition>

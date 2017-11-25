@@ -11,6 +11,7 @@
 
     <f:metadata>
         <f:viewAction action="#{pesquisaObjetivoTiBean.inicializar()}" />
+        <o:viewParam name="processo" value="#{cadastroProcessoBean.processo}" />
     </f:metadata>
 
     <ui:define name="conteudo">
@@ -49,6 +50,13 @@
             <p:dataTable id="table-objetivoTi" emptyMessage="Nenhum registro encontrado" value="#{cadastroProcessoBean.listObjetivoTi}" var="itemObjetivoTi">
                 <p:column headerText="Nome">
                     <h:outputText value="#{itemObjetivoTi.descricao}" />
+                </p:column>
+
+                <p:column headerText="Ação" width="55">
+                    <p:commandButton action="#{cadastroProcessoBean.removerObjetivoTi()}" icon="fa fa-trash" title="Remover ObjetivoTi" 
+                                     process="@this" update="table-objetivoTi" >
+                        <f:setPropertyActionListener value="#{itemObjetivoTi}" target="#{cadastroProcessoBean.objetivoTiSelecionado}" />
+                    </p:commandButton>
                 </p:column>
             </p:dataTable>
 

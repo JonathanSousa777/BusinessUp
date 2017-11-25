@@ -46,6 +46,11 @@ public class CadastroProcessoBean implements Serializable {
         listObjetivoTi.add(objetivoTiSelecionado);
         objetivoTiSelecionado = new ObjetivoTi();
     }
+    
+    public void removerObjetivoTi() {
+        listObjetivoTi.remove(objetivoTiSelecionado);
+        objetivoTiSelecionado = new ObjetivoTi();
+    }
 
     private void limpar() {
         processo = new Processo();
@@ -66,7 +71,10 @@ public class CadastroProcessoBean implements Serializable {
     }
 
     public void setProcesso(Processo processo) {
-        this.processo = processo;
+        if (processo != null) {
+            this.processo = processo;
+            this.listObjetivoTi = this.processo.getObjetivosTi();
+        }
     }
 
     public ObjetivoTi getObjetivoTiSelecionado() {
