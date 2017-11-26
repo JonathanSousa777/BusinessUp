@@ -1,0 +1,50 @@
+INEXISTENTE:
+O gerenciamento do processo de Definir um plano estratégico de TI que satisfaça ao requisito do negócio para a TI de sustentar ou estender a estratégia de negócio e requisitos de governança e, ao mesmo tempo, ser transparente quanto aos benefícios, custos e riscos.
+
+INICIAL: 
+A necessidade de um planejamento estratégico de TI é conhecida pela Direção de TI. O planejamento de TI é realizado caso a caso, em resposta a um requisito específico de negócio. O planejamento estratéico de TI é ocasionalmente discutidonas reuniões da Direção de TI. O alinhamento de requisitos de negócio, aplicações e tecnologia ocorre de forma reativa ao invés de seguir uma estratégia corporativa. A posição estratégica de risco é identificada informalmente projeto a projeto
+
+REPETITIVEL:
+O planejamento estratégico de TI é compartilhado com a Direção do Negócio conforme a necessidade. A atualização dos planos de TI acontece em resposta aos pedidos da Direção. As decisões estratégicas são tomadas projeto a projeto, sem consistênciacom uma estratégia corporativa. Os riscos e beníficios do usuário nas principais decisões estratégicas são determinados de forma intuitiva
+
+DEFINIDO:
+Uma política define quando e como realizar um planejamento estratégico de TI. O planejamento estratégico de TI segue uma abodagem estruturada, que é documentada e conhecida por todo o pessoal envolvido. O processodo planejamento de TI é razoavelmente discutido e assegura que um planejamento adequado seja realizado. Entretando, a implementação do processo fica a critério de cada Direção e não há procedimentos para examinar o processo. A estratégia geral de TI inclui uma definição consistente dos riscos que a organização aceita correr por ser inovadora ou por seguir tendências. As estragégias de recursos financeiros, técnicos e humanos influenciam cada vez mais na aquisição de novos produtos e tecnologias. O planejamento estratégico de TI é discutido nas reuniões de gerenciamento do negócio
+
+GERENCIADO:
+O planejamento estratégico de TI é uma prática padrão cujas exceções são detectadas pela Direção. O planejamento estratégico de TI é uma função da Direção com nível sênior de resoinsabilidade. A Direçãoé capaz demonitorar o processo de planejamento estratégico de TIm tomar decisões baseadas nesse processo e medir sua efetividade. Os planejamentos de TI, de curto e longo prazo são cascateados de cima para baixo na organiazação, com atualização quando necessário. A estratégia de TI e a estratégia global da organização estão se tornando gradativamente mais coordenadas por abordar processos de negócio, capacidades de valor agregado e alavancar o uso de aplicativos e tecnologias na reengenharia dos processos de negócios. Há um processo bem definido para determinar o uso dos recursos internos e externos no desenvolvimento de sistema e operações
+
+OTIMIZADO:
+O planejamento estratégico de TI é um processo documentado e dinâmico, sempre considerado no estabelecimento dos dos objetivos de negócio,e resulta em valor de negócio identificável através dos investimentos em TI. As considerações de risco e o valor agregado são continuamente atualizados no processo de planejamento estratégico de TI. Planos realísticos de TI de longo prazosão desenvolvidos e constantemente atualizados para refletir mudanças na tecnologia e no desenvolvimento relativos ao negocio. Comparações com normas confiáveis e bem conhecidas do mercado são realizadas e integradas ao processo de formulação de estratégias(benchmarking). O planejamento estratégico inclui uma análise de como as novas tecnologias podem criar novas capacidades de negócio e melhorar a vantagem competitiva da organização
+
+1º Monitorar e Avaliar o desempenho de TI: 0.A sua empresa possui um gerenciamento do processo de Definir um plano estratégico de TI para monitorar e avaliar o desempenho de TI que satisfaça ao requisito do negócio para a TI de sustentar ou estender a estratégia de negócio e requisitos de governança?
+2º Monitorar e Avaliar o desempenho de TI: 1.A sua empresa possui um planejamento estratégico de TI que é conhecida pela Direção de TI?
+3º Monitorar e Avaliar o desempenho de TI: 2.A sua empresa possui um planejamento estratégico de TI que é compartilhado com a Direção do Negócio conforme as necessidades do desempenho de TI?
+4º Monitorar e Avaliar o desempenho de TI: 3.A sua empresa possui uma política que define quando e como realizar um planejamento estratégico de TI visando o aumento do desempenho de TI?
+5º Monitorar e Avaliar o desempenho de TI: 4.A sua empresa possui um planejamento estratégico de TI que é uma prática padrão cujas exceções são detectadas pela Direção visando a evolução do desempenho de TI?
+6º Monitorar e Avaliar o desempenho de TI: 5.A sua empresa possui um planejamento estratégico de TI que é um processo documentado e dinâmico, sempre considerado no estabelecimento dos objetivos de negócio,e resulta em valor de negócio ao desempenho de TI?
+
+7ª Monitorar e Avaliar o desempenho de Controles Internos: 0.A sua empresa possui um gerenciamento do processo de Definir um plano estratégico de TI para monitorar e avaliar o desempenho dos Controles Internos que satisfaçam ao requisito do negócio para a TI de sustentar ou estender a estratégia de negócio e requisitos de governança?
+8º Monitorar e Avaliar o desempenho de Controles Internos: 1.A sua empresa possui um planejamento estratégico de TI que é conhecida pela Direção de TI visando melhorar os Controles Internos?
+9º Monitorar e Avaliar o desempenho de Controles Internos: 2.A sua empresa possui um planejamento estratégico de TI que é compartilhado com a Direção do Negócio conforme as necessidades do desempenho dos Controles Internos?
+10º Monitorar e Avaliar o desempenho dos Controles Internos: 3.A sua empresa possui uma política que define quando e como realizar um planejamento estratégico de TI visando o aumento do desempenho dos Controles Internos?
+11º Monitorar e Avaliar o desempenho dos Controles Internos: 4.A sua empresa possui um planejamento estratégico de TI que é uma prática padrão cujas exceções são detectadas pela Direção visando a evolução do desempenho dos Controles Internos?
+12º Monitorar e Avaliar o desempenho dos Controles Internos: 5.A sua empresa possui um planejamento estratégico de TI que é um processo documentado e dinâmico, sempre considerado no estabelecimento dos objetivos de negócio,e resulta em valor de negócio ao desempenho dos Controles Internos?
+
+13ª Assegurar conformidade com requisitos externos: 0.A sua empresa possui um gerenciamento do processo de Definir um plano estratégico de TI para Assegurar conformidade com requisitos externos que satisfaçam ao requisito do negócio para a TI de sustentar ou estender a estratégia de negócio e requisitos de governança?
+14º Assegurar conformidade com requisitos externos: 1.A sua empresa possui um planejamento estratégico de TI que é conhecida pela Direção de TI visando assegurar os requisitos externos?
+15º Assegurar conformidade com requisitos externos: 2.A sua empresa possui um planejamento estratégico de TI que é compartilhado com a Direção do Negócio conforme as necessidades de Assegurar conformidade com requisitos externos?
+16º Assegurar conformidade com requisitos externos: 3.A sua empresa possui uma política que define quando e como realizar um planejamento estratégico de TI visando Assegurar conformidade com requisitos externos?
+17º Assegurar conformidade com requisitos externos: 4.A sua empresa possui um planejamento estratégico de TI que é uma prática padrão cujas exceções são detectadas pela Direção visando Assegurar conformidade com requisitos externos?
+18º Assegurar conformidade com requisitos externos: 5.A sua empresa possui um planejamento estratégico de TI que é um processo documentado e dinâmico, sempre considerado no estabelecimento dos objetivos de negócio,e resulta em Assegurar conformidade com requisitos externos?
+
+19ª Prover governança de TI: 0.A sua empresa possui um gerenciamento do processo de Definir um plano estratégico de TI para Prover governança de TI que satisfaça ao requisito do negócio para a TI de sustentar ou estender a estratégia de negócio e requisitos de governança?
+20º Prover governança de TI: 1.A sua empresa possui um planejamento estratégico de TI que é conhecida pela Direção de TI visando Prover governança de TI?
+21º Prover governança de TI: 2.A sua empresa possui um planejamento estratégico de TI que é compartilhado com a Direção do Negócio conforme as necessidades de Prover governança de TI?
+22º Prover governança de TI: 3.A sua empresa possui uma política que define quando e como realizar um planejamento estratégico de TI visando Prover governança de TI?
+23º Prover governança de TI: 4.A sua empresa possui um planejamento estratégico de TI que é uma prática padrão cujas exceções são detectadas pela Direção visando Prover governança de TI?
+24º Prover governança de TI: 5.A sua empresa possui um planejamento estratégico de TI que é um processo documentado e dinâmico, sempre considerado no estabelecimento dos objetivos de negócio,e resulta em Prover governança de TI?
+
+
+
+
+

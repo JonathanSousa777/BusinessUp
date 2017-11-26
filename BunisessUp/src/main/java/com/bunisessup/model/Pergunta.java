@@ -3,7 +3,6 @@ package com.bunisessup.model;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,10 +11,9 @@ import javax.persistence.Table;
 public class Pergunta implements Serializable {
 
     private long id;
-    private String descriao;
+    private String descricao;
 
     @Id
-    @GeneratedValue
     public long getId() {
         return id;
     }
@@ -24,13 +22,13 @@ public class Pergunta implements Serializable {
         this.id = id;
     }
 
-    @Column
-    public String getDescriao() {
-        return descriao;
+    @Column(length = 400)
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescriao(String descriao) {
-        this.descriao = descriao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     @Override

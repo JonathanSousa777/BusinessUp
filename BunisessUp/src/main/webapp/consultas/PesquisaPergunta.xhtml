@@ -1,0 +1,32 @@
+<ui:composition template="/WEB-INF/template/Layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="titulo">BunisessUp - Consulta</ui:define>
+    <ui:define name="nomePagina">Perguntas relacionadas aos processos</ui:define>
+
+    <f:metadata>
+        <f:viewAction action="#{pesquisaPerguntaBean.inicializar()}" />
+    </f:metadata>
+
+    <ui:define name="conteudo">
+        <p:messages id="messages" />
+        <h:form id="form">
+            <p:dataTable id="tabelaPergunta" style="margin-top: 20px;" rows="10" paginator="true" paginatorPosition="bottom" var="pergunta"
+                         emptyMessage="Nenhum registro foi encontrado" paginatorAlwaysVisible="false" value="#{pesquisaPerguntaBean.listaPergunta}">
+
+                <p:column headerText="Id"  width="8" style="text-align: center;">
+                    <h:outputText value="#{pergunta.id}" />
+                </p:column>
+
+                <p:column headerText="Nome" style="width: 130px;">
+                    <h:outputText value="#{pergunta.descricao}" />
+                </p:column>
+            </p:dataTable>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
