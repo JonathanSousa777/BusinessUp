@@ -8,10 +8,28 @@
     <ui:define name="titulo">BunisessUp - Calcular</ui:define>
     <ui:define name="nomePagina">Responda as perguntas e veja sua nota</ui:define>
 
-    <ui:define name="conteudo">
-        <h:form id="form">
-            <h4>Responda com notas de 1 a 5 e no final terá o resultado</h4>
+    <f:metadata>
+        <f:viewAction action="#{calcularBean.inicializar()}" />
+    </f:metadata>
 
+    <ui:define name="conteudo">
+        <p:messages id="messages" />
+        
+        <h:form id="form">
+            <h4>Responda com notas de 1 a 6 e no final terá o resultado</h4>
+
+            <p:panel header="Perguntas para avaliações">
+                <h:outputText value="#{calcularBean.pergunta.descricao}" />
+                <h:inputText value="#{calcularBean.nota}" styleClass="input-pergunta"/>
+
+                <br/>
+                <h:commandButton value="Próxima pergunta" action="#{calcularBean.passarPergunta()}" styleClass="btn btn-primary">
+                    <f:ajax execute="@this @form" render="@form messages" />
+                </h:commandButton>
+                <h:commandButton value="Reiniciar" action="#{calcularBean.reiniciar()}" styleClass="btn btn-warning" style="float: right;">
+                    <f:ajax execute="@this @form" render="@form" />
+                </h:commandButton>
+            </p:panel>
         </h:form>
     </ui:define>
 

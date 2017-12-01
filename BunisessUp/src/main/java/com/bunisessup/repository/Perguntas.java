@@ -20,4 +20,8 @@ public class Perguntas implements Serializable {
     public List<Pergunta> todas() {
         return manager.createQuery("from Pergunta", Pergunta.class).getResultList();
     }
+
+    public Pergunta porId(Long id) {
+        return manager.find(Pergunta.class, id);
+    }
 }
